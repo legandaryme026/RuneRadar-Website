@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - RuneRadar</title>
+
+    <meta
+        name="description"
+        content="Contact RuneRadar support for technical issues, billing questions, privacy requests and feedback."
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container nav">
+
+            <a class="brand" href="index.html">
+                <div class="brand-icon">R</div>
+                <span>RuneRadar</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#install">Install</a>
+                <a href="index.html#faq">FAQ</a>
+            </nav>
+
+            <a
+                class="button button-small button-outline"
+                href="index.html#install"
+            >
+                Get RuneRadar
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="section">
+
+            <div class="container contact-layout">
+
+                <div class="contact-intro">
+
+                    <p class="eyebrow">
+                        Contact
+                    </p>
+
+                    <h1>
+                        How can we help?
+                    </h1>
+
+                    <p>
+                        Send a message for support, billing questions,
+                        privacy requests, feedback or anything else related
+                        to RuneRadar.
+                    </p>
+
+                    <div class="contact-info-card">
+
+                        <strong>
+                            Technical bugs
+                        </strong>
+
+                        <p>
+                            Bugs can also be reported publicly through GitHub Issues.
+                        </p>
+
+                        <a
+                            href="https://github.com/legandaryme026/RuneRadar-Plugin/issues"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open GitHub Issues →
+                        </a>
+
+                    </div>
+
+                    <div class="contact-info-card">
+
+                        <strong>
+                            Billing & RuneRadar Pro
+                        </strong>
+
+                        <p>
+                            Payment and subscription support will be handled privately
+                            through this contact form once RuneRadar Pro launches.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form-card">
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    id="name"
+                                    name="name"
+                                    type="text"
+                                    maxlength="80"
+                                    autocomplete="name"
+                                    required
+                                    placeholder="Your name"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    maxlength="160"
+                                    autocomplete="email"
+                                    required
+                                    placeholder="you@example.com"
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="category">
+                                What can we help with?
+                            </label>
+
+                            <select
+                                id="category"
+                                name="category"
+                                required
+                            >
+                                <option value="">
+                                    Choose a category
+                                </option>
+
+                                <option value="technical">
+                                    Technical issue
+                                </option>
+
+                                <option value="billing">
+                                    Billing / RuneRadar Pro
+                                </option>
+
+                                <option value="privacy">
+                                    Privacy request
+                                </option>
+
+                                <option value="feature">
+                                    Feature request
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                id="subject"
+                                name="subject"
+                                type="text"
+                                maxlength="120"
+                                required
+                                placeholder="What is your message about?"
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                maxlength="4000"
+                                required
+                                rows="8"
+                                placeholder="Tell us what happened or what you need help with..."
+                            ></textarea>
+
+                        </div>
+
+                        <div
+                            class="honeypot"
+                            aria-hidden="true"
+                        >
+                            <label for="website">
+                                Website
+                            </label>
+
+                            <input
+                                id="website"
+                                name="website"
+                                type="text"
+                                tabindex="-1"
+                                autocomplete="off"
+                            >
+                        </div>
+
+                        <button
+                            class="button button-primary full-width"
+                            id="contactSubmitButton"
+                            type="submit"
+                        >
+                            Send message
+                        </button>
+
+                        <p
+                            id="contactStatus"
+                            class="contact-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <strong>
+                    RuneRadar
+                </strong>
+
+                <p>
+                    Grand Exchange tools for smarter OSRS flipping.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                RuneRadar is an independent project and is not affiliated with
+                Jagex Ltd. Old School RuneScape and RuneLite belong to their
+                respective owners.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
