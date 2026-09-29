@@ -2,13 +2,7 @@ const upgradeButton = document.getElementById("upgradeButton");
 
 if (upgradeButton) {
     upgradeButton.addEventListener("click", () => {
-        upgradeButton.textContent = "Pro coming soon";
-        upgradeButton.disabled = true;
-
-        setTimeout(() => {
-            upgradeButton.textContent = "Join Pro Waitlist";
-            upgradeButton.disabled = false;
-        }, 1800);
+        window.location.href = "checkout.html";
     });
 }
 

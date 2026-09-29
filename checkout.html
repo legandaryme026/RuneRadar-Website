@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Choose a secure RuneRadar Pro subscription.">
+    <title>RuneRadar Pro - Secure Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</head>
+<body class="checkout-page">
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <div class="brand-icon">R</div>
+                <span>RuneRadar</span>
+            </a>
+            <span class="sandbox-badge" id="checkoutEnvironmentBadge">Secure checkout</span>
+        </div>
+    </header>
+
+    <main class="checkout-main">
+        <section class="container checkout-shell">
+            <div class="checkout-heading">
+                <p class="eyebrow">RuneRadar Pro</p>
+                <h1>Upgrade your signed-in RuneRadar account</h1>
+                <p id="checkoutIntro">
+                    Loading your secure checkout link…
+                </p>
+            </div>
+
+            <div
+                class="checkout-status"
+                id="checkoutStatus"
+                role="status"
+                aria-live="polite"
+            ></div>
+
+            <div class="checkout-plans" id="checkoutPlans" hidden>
+                <article class="checkout-plan">
+                    <p class="price-name">Monthly</p>
+                    <div class="price">€4.99 <span>/ month</span></div>
+                    <p>Flexible monthly access to every Pro feature.</p>
+                    <button
+                        class="button button-secondary full-width checkout-button"
+                        type="button"
+                        data-plan="monthly"
+                    >
+                        Choose Monthly
+                    </button>
+                </article>
+
+                <article class="checkout-plan checkout-plan-featured">
+                    <div class="popular-badge">Save €19.89 / year</div>
+                    <p class="price-name">Yearly</p>
+                    <div class="price">€39.99 <span>/ year</span></div>
+                    <p>The best value for regular Grand Exchange flippers.</p>
+                    <button
+                        class="button button-primary full-width checkout-button"
+                        type="button"
+                        data-plan="yearly"
+                    >
+                        Choose Yearly
+                    </button>
+                </article>
+            </div>
+
+            <div class="checkout-benefits">
+                <h2>Included with Pro</h2>
+                <ul>
+                    <li>High Profit mode and More Opportunities</li>
+                    <li>Up to 50 recommendations</li>
+                    <li>Advanced filters and future Pro features</li>
+                    <li>Access follows your RuneRadar account on all devices</li>
+                </ul>
+            </div>
+
+            <p class="checkout-footnote" id="checkoutFootnote">
+                After checkout, return to RuneLite and refresh your account.
+                Pro activates only after RuneRadar receives Paddle's verified
+                payment confirmation.
+            </p>
+        </section>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
